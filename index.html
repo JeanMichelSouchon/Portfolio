@@ -3,103 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Jean Michel Souchon</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <div class="container">
-        <img src="profile.jpg" alt="Jean Michel">
-        <h1>Jean Michel Souchon</h1>
-        <p>Technicien Télécom & Infrastructure</p>
+
+    <header>
+        <div class="logo">Mon Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#experiences-professionnelles">Expériences</a></li>
+                <li><a href="#veille">Veille</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="fullscreen">
+        <div class="background">
+            <iframe src="https://www.planete-astronomie.eu/files/rotation-planete/terre-atmosphere-stars.html" frameborder="0"></iframe>
+        </div>
+        <div class="content">
+            <h1>Bienvenue sur mon portfolio</h1>
+            <p>Découvrez mes projets et mon parcours.</p>
+            <br>
+            <a href="#projects" class="btn">Voir mes projets</a>
+        </div>
+
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="projet1.jpg" alt="Projet 1">
+                <h3>Projet 1</h3>
+            </div>
+            <div class="project-card">
+                <img src="projet2.jpg" alt="Projet 2">
+                <h3>Projet 2</h3>
+            </div>
+            <div class="project-card">
+                <img src="projet3.jpg" alt="Projet 3">
+                <h3>Projet 2</h3>
+            </div>
+            <!-- Ajouter plus de projets ici -->
+        </div>
+    </section>
+
+
+
+    <!-- Section À Propos -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <div class="about-content">
+            <p>Je m'appelle <strong>Jean Michel Souchon</strong>, j'ai <strong>24 ans</strong>, et je suis un jeune <strong>développeur web</strong> passionné par les nouvelles technologies. Avant de me lancer dans le développement, j'ai travaillé comme <strong>technicien infrastructure réseau (N1~N2)</strong>, où j'ai acquis une solide expérience dans la gestion et la maintenance des systèmes informatiques. Aujourd'hui, je suis animé par un désir constant de <strong>créer de nouvelles choses</strong> et de repousser les limites de l'innovation.</p>
+            
+            <p>Je suis particulièrement fasciné par les avancées dans le domaine de la <strong>domotique</strong> et de l'<strong>intelligence artificielle (IA)</strong>, qui transforment nos vies au quotidien. Ces technologies m'inspirent à concevoir des solutions intelligentes, et je suis toujours à la recherche de nouvelles façons d'intégrer ces innovations dans des projets pratiques. En parallèle, ma passion pour les <strong>jeux vidéo</strong> me pousse à explorer de nouvelles méthodes de création immersive et à m'informer sur les évolutions de l'industrie vidéoludique.</p>
+            
+            <p>En résumé, je suis un créateur curieux, passionné et toujours à l'affût des dernières tendances pour construire des projets technologiques qui marqueront l'avenir !</p>
+        </div>
+    
+        <div class="passions">
+            <div class="passion-card">
+                <img src="https://udd.eu/uploads/2023-10/vf-rsd-transition-numerique-652faca6a5e1c787367027.webp" alt="Domotique" />
+                <h3>Domotique</h3>
+                <p>Je suis passionné par l'intégration des technologies dans la maison pour améliorer la vie quotidienne.</p>
+            </div>
+            <div class="passion-card">
+                <img src="https://www.defense.gouv.fr/sites/default/files/ministere-armees/IA%20-%202%20-%20Adobe%20stock.jpg" alt="IA" />
+                <h3>Intelligence Artificielle</h3>
+                <p>L'IA transforme les industries et offre des possibilités infinies dans le développement d'applications intelligentes.</p>
+            </div>
+            <div class="passion-card">
+                <img src="https://www.wytwory.pl/userdata/public/gfx/20538/wytwory_gaming2_wzor.jpg" alt="Jeux vidéo" />
+                <h3>Jeux Vidéo</h3>
+                <p>Je suis passionné par les évolutions dans l'industrie des jeux vidéo, en particulier dans la création immersive.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="experiences-professionnelles">
+        <div class="section-header">
+          <h2>Mes Expériences Professionnelles</h2>
+          <p>Voici un aperçu de mes expériences professionnelles marquantes qui ont enrichi mon parcours.</p>
+        </div>
+        
+        <div class="experience">
+          <div class="experience-title">
+            <h3>Stage au lycée - Gestion d'un parc informatique</h3>
+            <p><em>Lieu : Hôpital</em></p>
+          </div>
+          <p>Durant ce stage, j'ai eu l'opportunité d'aider à la gestion du parc informatique de l'hôpital. Mes missions comprenaient :</p>
+          <ul>
+            <li>Répondre aux problèmes techniques survenant dans l'enceinte de l'hôpital.</li>
+            <li>Prévoir les systèmes de déploiement de nouvelles applications de gestion (notamment la transition vers les dossiers patients informatisés (DPI)) sur tous les ordinateurs de l'établissement.</li>
+          </ul>
+        </div>
+      
+        <div class="experience">
+          <div class="experience-title">
+            <h3>Technicien de support N1 - Softway Medical</h3>
+            <p><em>Lieu : Service Infrastructure</em></p>
+          </div>
+          <p>Dans le service infrastructure de Softway Medical, mes missions étaient de :</p>
+          <ul>
+            <li>Traiter les demandes des clients via une liste de tickets ou des appels téléphoniques.</li>
+            <li>Mettre en pratique mon autonomie et la gestion du stress, surtout lors de crises majeures.</li>
+            <li>Agir calmement et selon la procédure lors des problèmes urgents et critiques.</li>
+          </ul>
+          <p>C'était une expérience très enrichissante, me permettant de développer mes compétences en gestion du stress et de responsabilités.</p>
+        </div>
+      
+        <div class="experience">
+          <div class="experience-title">
+            <h3>Technicien Telecom D3 - Orange</h3>
+            <p><em>Lieu : Orange</em></p>
+          </div>
+          <p>Chez Orange, bien que ce travail soit différent de mes projets professionnels, il m'a apporté une grande expérience. Mes missions incluaient :</p>
+          <ul>
+            <li>Produire des lignes télécoms chez les clients, notamment l'installation de la fibre optique.</li>
+            <li>Dépanner les lignes télécom cuivre et fibre des clients.</li>
+          </ul>
+          <p>J'ai énormément appris grâce à mon équipe et au fait de voir la satisfaction des clients une fois leur problème résolu.</p>
+        </div>
+      </section>
+      
+      
+
+<!-- Section Veille Informatique -->
+<section id="veille">
+    <h2>Veille Informatique</h2>
+    <div class="veille-grid">
+        <div class="veille-card">
+            <iframe src="https://www.youtube.com/embed/OxSUNLTj-l8?si=9Mv1aC9PhZeeFZFf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Explosion des pratiques DDOS</h3>
+            <p>Les attaques DDoS exploitent des appareils vulnérables, favorisées par des équipements obsolètes et un marché structuré. Certains pays sont plus touchés, et la mise à jour des infrastructures reste un défi.</p>
+        </div>
+        <div class="veille-card">
+            <a target="_blank" href="https://www.togwe.com/blog/game-development/the-future-of-game-development-trends-to-watch-in-2025-and-beyond/"><img src="https://www.togwe.com/wp-content/uploads/2024/12/The-Future-of-Game-Development_-Trends-to-Watch-in-2025-and-Beyond.webp" alt="Veille 2"></a>
+            <h3>Future du développement du jeux video</h3>
+            <p>L’industrie du jeu vidéo évolue avec l’IA, la VR/AR et le cloud gaming, rendant les jeux plus immersifs et accessibles. Le marketing est crucial pour se démarquer : réseaux sociaux, influenceurs et stratégies digitales boostent la visibilité. Les jeux indépendants gagnent du terrain, soutenus par des campagnes ciblées, tandis que l’esport et l’engagement communautaire renforcent leur notoriété. La durabilité devient un enjeu, et les jeux sont désormais des marques nécessitant un storytelling fort. L’avenir repose sur l’IA et la blockchain pour toucher un public toujours plus large.</p>
+        </div>
+        <div class="veille-card">
+            <a target="_blank" href="https://www.la-maison-connectee.fr/levolution-des-maisons-connectees-en-2025-infographie/"><img src="https://batinews.fr/upload/post/img-329bf062-3a08-5402-9457-6cc05ed7811a.jpg" alt="Veille 3"></a>
+            <h3>L’Évolution des maisons connectées en 2025 : Infographie</h3>
+            <p>Les maisons connectées deviennent la norme, offrant confort et économies d’énergie grâce à l’IA et l’automatisation, malgré des défis comme la cybersécurité et le coût.</p>
+        </div>
+        <div class="veille-card">
+            <a target="_blank" href="https://guardia.school/le-lab/cybersecurite-les-perspectives-pour-2025.html#:~:text=En%202025%2C%20l%27intelligence%20artificielle,complexes%20et%20difficiles%20à%20repérer."><img src="https://guardia.school/wp-content/webp-express/webp-images/uploads/2024/12/Predictions-cyber-2025.jpg.webp" alt="Veille 4"></a>
+            <h3>perspectives des CyberAttaque 2025</h3>
+            <p>En 2025, les cyberattaques, alimentées par l'IA, seront plus ciblées et complexes. Les entreprises devront renforcer leur sécurité face aux ransomwares, au cyberespionnage et aux vulnérabilités des IoT et des données cloud. Les risques liés à l'informatique quantique et à la cryptographie croîtront, avec des exigences accrues de sécurité.</p>
+        </div>
+
     </div>
-</header>
-
-<section class="hidden" id="competences">
-    <h2>Compétences</h2>
-    <ul>
-        <li>Installation d'un serveur web</li>
-        <li>Gestion de base de données SQL</li>
-        <li>Création de site web (PHP, HTML, CSS)</li>
-        <li>Interaction avec les clients</li>
-    </ul>
 </section>
 
-<section class="hidden" id="education">
-    <h2>Éducation</h2>
-    <div class="timeline">
-        <div class="timeline-item left">
-            <img src="bts_sio.png" alt="BTS SIO">
-            <div class="content">
-                <h3>BTS SIO (Alternance)</h3>
-                <p>Maestris BTS Toulon | 2023 - 2025</p>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <img src="bts_snir.png" alt="BTS SNIR">
-            <div class="content">
-                <h3>BTS SNIR</h3>
-                <p>Lycée Costebelle | 2019 - 2021</p>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <img src="bac_sn.png" alt="Baccalauréat SN">
-            <div class="content">
-                <h3>Baccalauréat SN</h3>
-                <p>Lycée Costebelle | 2016 - 2019</p>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+            <input type="text" placeholder="Votre Nom" required>
+            <input type="email" placeholder="Votre Email" required>
+            <textarea placeholder="Votre Message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
 
-<section class="hidden" id="experience">
-    <h2>Expérience</h2>
-    <div class="timeline">
-        <div class="timeline-item left">
-            <img src="orange.png" alt="Orange">
-            <div class="content">
-                <h3>Technicien Télécom D3</h3>
-                <p>Orange | Septembre 2023 - En cours</p>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <img src="softway.png" alt="Softway">
-            <div class="content">
-                <h3>Technicien Infrastructure</h3>
-                <p>Softway Medical | Nov 2022 - Août 2023</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="hidden" id="projects">
-    <h2>Projets</h2>
-    <div class="project-gallery">
-        <div class="project">
-            <img src="project1.jpg" alt="Projet 1">
-            <p>Site web E-Commerce</p>
-        </div>
-        <div class="project">
-            <video src="project2.mp4" controls></video>
-            <p>Application de gestion de stock</p>
-        </div>
-        <div class="project">
-            <img src="project3.jpg" alt="Projet 3">
-            <p>Développement d'un site vitrine</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="hidden">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:jeanmichel@example.com">jeanmichel@example.com</a></p>
-    <p>Téléphone : 06 95 44 65 25</p>
-</section>
-
-<footer>
-    <p>© 2025 Jean Michel Souchon - Portfolio</p>
-</footer>
-
-<script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,15 +1,26 @@
+// Effet de fondu au chargement
 document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll(".hidden");
+    document.body.style.opacity = 1;
+});
 
-    const scrollAnimation = () => {
-        sections.forEach(section => {
-            const sectionTop = section.getBoundingClientRect().top;
-            if (sectionTop < window.innerHeight * 0.8) {
-                section.classList.add("show");
-            }
-        });
-    };
+// Animation au scroll
+window.addEventListener("scroll", () => {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(section => {
+        let position = section.getBoundingClientRect().top;
+        let screenPosition = window.innerHeight / 1.2;
 
-    window.addEventListener("scroll", scrollAnimation);
-    scrollAnimation(); // Pour montrer les sections visibles dès le départ
+        if (position < screenPosition) {
+            section.style.opacity = "1";
+            section.style.transform = "translateY(0)";
+        }
+    });
+});
+
+// Ajout d'une transition au scroll
+let sections = document.querySelectorAll("section");
+sections.forEach(section => {
+    section.style.transition = "opacity 1s ease-out, transform 1s ease-out";
+    section.style.opacity = "0";
+    section.style.transform = "translateY(50px)";
 });
