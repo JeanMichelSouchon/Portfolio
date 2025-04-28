@@ -12,6 +12,9 @@
 body {
     background-color: #0a0a0a;
     color: #ffffff;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 /* HEADER */
@@ -335,3 +338,5 @@ strong {
       transform: translateY(0);
     }
   }
+
+  
