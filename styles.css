@@ -214,6 +214,10 @@ button:hover {
     margin-top: 10px;
     color: #f39c12;
 }
+.veille-card a{
+    text-decoration: none; /* Enlève le soulignement */
+    color: inherit; /* Prend la couleur du texte environnant */
+}
 /* À propos de moi */
 #about {
     padding: 80px 10%;
